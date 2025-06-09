@@ -9,8 +9,8 @@ Aplikasi pencatatan pekerjaan pegawai dan perhitungan remunerasi, lengkap dengan
 
 ```mermaid
 graph LR
-    Frontend(Next.js) -->|HTTP Request (axios/fetch)| Backend(Laravel API)
-    Backend -->|JSON Response| Frontend
+    Frontend(Next.js) --> Backend(Laravel API)
+    Backend --> Frontend
     Backend --> Database[(MySQL / MariaDB)]
 ```
 
